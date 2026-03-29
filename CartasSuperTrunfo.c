@@ -150,6 +150,18 @@ int main() {
   printf("PIB per Capita: %d\n", percapita01 > percapita02);
   printf("Super Poder: %d\n", superpoder01 > superpoder02);
 
+    // Comparação de cartas
+  printf("\n   ---   COMPARAÇÃO FINAL ENTRE AS CARTAS   ---   \n");
+  printf("Atributo escolhido: PIB per capita\n");
+  printf("CARTA 01: %s com PIB per capita de %.2f Reais\n", cidade01, percapita01);
+  printf("CARTA 02: %s com PIB per capita de %.2f Reais\n", cidade02, percapita02);
+
+  if (percapita01 > percapita02) {
+    printf("\n   ***   A CARTA 01 - %s é a vencedora!   ***   \n", cidade01);
+  } else if (percapita01 < percapita02) {
+    printf("\n   ***   A CARTA 02 - %s é a vencedora!   ***   \n", cidade02);
+  } 
+
 
 return 0;
 } 
